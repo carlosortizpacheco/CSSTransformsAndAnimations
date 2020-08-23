@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Effect 2</title>
+</head>
+
+<style>
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a {
+        position: relative;
+        text-decoration: none;
+        color: black;
+        font-family: sans-serif;
+        font-size: 45px;
+        border: 5px solid black;
+        padding: 40px 80px;
+        transition: all 1s;
+        overflow: hidden;
+    }
+
+    a:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: cornflowerblue;
+        z-index: -1;
+        transform: translateX(-370px);
+        /* transform: translateX(-100%) */
+        transition: transform 1s linear;
+    }
+
+    a:hover:before {
+        transform: translateX(0);
+    }
+
+    a:hover {
+        color: white;
+    }
+
+
+</style>
+
+
+
+<body>
+    <a href="#">Hover Me!</a>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate 3D</title>
+</head>
+
+<style>
+.translate-3d {
+    width: 300px;
+    height: 400px;
+    perspective: 500px;
+    border: 1px solid black;
+}
+
+.translate-3d img{
+    width: 100%;
+    height: 100%;
+    transition: transform 2s;
+}
+
+.translate-3d img:hover {
+    transform: translateZ(100px);
+}
+</style>
+
+<body>
+    <div  class="translate-3d">
+        <h2>Translate 3D</h2>
+        <img src="./img/pexels-thiago-matos-2008426.jpg" alt="avion-volando-edificios">
+    </div>
+</body>
+</html>

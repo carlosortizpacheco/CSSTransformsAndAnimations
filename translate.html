@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate</title>
+</head>
+
+<style>
+
+.translate-horizontal {
+    width: 300px;
+    height: 400px;
+}
+
+.translate-horizontal img{
+    width: 100%;
+    height: 100%;
+    transition: transform 2s;
+}
+
+.translate-horizontal img:hover {
+    transform: translateX(500px);
+}
+
+.translate-vertical {
+    width: 300px;
+    height: 400px;
+    margin-top: 15%;
+}
+
+.translate-vertical img{
+    width: 100%;
+    height: 100%;
+    transition: transform 2s;
+}
+
+.translate-vertical img:hover {
+    transform: translateY(500px);
+}
+
+.translate-horizontal-vertical {
+    width: 300px;
+    height: 400px;
+    margin-top: 15%;
+}
+
+.translate-horizontal-vertical img{
+    width: 100%;
+    height: 100%;
+    transition: transform 2s;
+}
+
+.translate-horizontal-vertical img:hover {
+    transform: translate(500px,500px);
+}
+
+</style>
+
+<body>
+    <div  class="translate-horizontal">
+        <h2>Translate Horizontal</h2>
+        <img src="./img/pexels-thiago-matos-2008426.jpg" alt="avion-volando-edificios">
+    </div>
+    <div  class="translate-vertical">
+        <h2>Translate Vertical</h2>
+        <img src="./img/pexels-thiago-matos-2008426.jpg" alt="avion-volando-edificios">
+    </div>
+    <div  class="translate-horizontal-vertical">
+        <h2>Translate Horizontal-Vertical</h2>
+        <img src="./img/pexels-thiago-matos-2008426.jpg" alt="avion-volando-edificios">
+    </div>
+</body>
+</html>
