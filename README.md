@@ -58,3 +58,39 @@ Repositorio de ejemplos de CSS básico para las transformaciones de rotate, scal
   } 
 }
 ```
+
+### Animación version corta (shorthand)
+- version larga:
+
+```html
+div {
+  animation-name: nombreAnimacion;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+  animation-delay: 1s;
+}
+
+@keyframes nombreAnimación {
+  0% { transform: translateX(0) }
+  50% { transform: translateX(50%) }
+  100% { transform: translateX(100%) }
+}
+
+```
+
+-- version corta
+```html
+div {
+  animation: moving 3s both 3 ease-in alternate 1s;
+}
+
+@keyframes nombreAnimación {
+  0% { transform: translateX(0) }
+  50% { transform: translateX(50%) }
+  100% { transform: translateX(100%) }
+}
+
+```
