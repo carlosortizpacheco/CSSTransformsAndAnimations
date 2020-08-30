@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Button Effect 11</title>
+</head>
+
+<style>
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		height: 100vh;
+		font-family: sans-serif;
+	}
+
+	a {
+		padding: 20px 40px;
+		text-decoration: none;
+		text-transform: uppercase;
+		background-color: yellow;
+		color: white;
+		font-size: 20px;
+		letter-spacing: 2px;
+		position: relative;
+	}
+
+	a:before{
+		content:'BUTTON';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: green;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transform: rotateX(270deg);
+		transform-origin: top;
+		transition: all 0.5s;
+	}
+
+	a:hover:before,
+	a:hover:after {
+		transform: rotateX(0deg);
+	}
+
+	a::after{
+		content:'BUTTON';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: red;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transform: rotateX(270deg);
+		transform-origin: top;
+		transition: all 0.5s;
+		transition-delay: 0.25s;
+	}
+
+</style>
+
+<body>
+	<a href="#">button</a>
+</body>
+</html>

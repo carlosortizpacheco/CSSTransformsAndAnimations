@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Button Effect 16</title>
+</head>
+
+<style>
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		height: 100vh;
+		font-family: sans-serif;
+		background-color: grey;
+	}
+
+	a {
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 22px;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		letter-spacing: 3px;
+		height: 60px;
+		width: 200px;
+		line-height: 60px;
+		text-align: center;
+		color: yellow;
+		position: relative;
+
+	}
+
+	a:before {
+		content: '';
+		position: absolute;
+		height: 90px;
+		width: 100%;
+		top: -15px;
+		left: 0;
+		border-left: 2px solid red;
+		border-right: 2px solid yellow;
+		transition: all 0.4s;
+	}
+
+	a:after {
+		content: '';
+		position: absolute;
+		height: 60px;
+		width: 230px;
+		top: 0;
+		left: -15px;
+		border-top: 2px solid red;
+		border-bottom: 2px solid yellow;
+		transition: all 0.4s;
+		transition-delay: 0.4s;
+	}
+
+	a:hover:before {
+		transform: rotateY(180deg);
+	}
+
+	a:hover:after {
+		transform: rotateX(180deg);
+	}
+
+</style>
+
+<body>
+	<a href="#">hover me!</a>
+</body>
+</html>

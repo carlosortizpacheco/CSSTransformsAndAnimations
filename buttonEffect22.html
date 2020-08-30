@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Button Effect 22</title>
+</head>
+
+<style>
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		height: 100vh;
+		font-family: sans-serif;
+		background-color: grey;
+	}
+
+	.fig {
+		width: 500px;
+		color: white;
+		font-family: 'Raleway';
+		border-radius: 10px;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.fig img {
+		width: 100%;
+	
+	}
+
+	.fig:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #006266;
+		opacity: 0.5;
+		transform: translateY(100%);
+		transition: all 0.5s;
+		transition-delay: 0.1s;
+	}
+
+	.fig:hover:before {
+		transform: translateY(0);
+		transition-delay: 0s;
+	}
+
+	.fig .caption {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		transform: translateY(-20px);
+		opacity: 0;
+		transition: all 0.5s;
+	}
+
+	.fig:hover .caption {
+		opacity: 1;
+		transform: translateY(0);
+		transition-delay: 0.3s;
+	}
+
+	.fig h3, .fig h5 {
+		margin: 0;
+		letter-spacing: 1px;
+	}
+
+	.fig h3 {
+		text-transform: uppercase;
+		font-weight: 400;
+		margin-bottom: 5px;
+	}
+
+	.fig h5 {
+		background-color: #ae895d;
+		padding: 3px 5px;
+	}
+
+
+</style>
+
+<body>
+	<div class='fig'>
+		<img src="./photoGirl.jpg" alt="photoGirl">
+		<div class="caption">
+			<h3>amazing caption!</h3>
+			<h5>other text goes here!</h5>
+		</div>
+	</div>
+</body>
+</html>

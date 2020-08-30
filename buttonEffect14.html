@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Button Effect 14</title>
+</head>
+
+<style>
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		height: 100vh;
+		font-family: sans-serif;
+	}
+
+a {
+	width: 300px;
+	height: 60px;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: transparent;
+	text-align: center;
+	line-height: 60px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	position: relative;
+	transition: all 0.2s;
+	color: white;
+}
+
+a:before {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	width: 100%;
+	height: 100%;
+	background-color: #20caff;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transition: all 0.2s;
+	transform-origin: top;
+}
+
+a:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 100%;
+	height: 100%;
+	background-color: #ff7675;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transition: all 0.2s;
+	transform-origin: bottom;
+}
+
+a:hover:before {
+	top: -6px;
+	left: 0;
+	transform: perspective(1000px) rotateX(75deg);
+}
+
+a:hover:after {
+	top: 6px;
+	left: 0;
+	transform: perspective(1000px) rotateX(-75deg);
+}
+
+a:hover {
+	color:black;
+}
+
+</style>
+
+<body>
+	<a href="#">hover me!</a>
+</body>
+</html>
