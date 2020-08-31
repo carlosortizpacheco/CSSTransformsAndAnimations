@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Animation 1</title>
+</head>
+
+<style>
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		height: 100vh;
+		font-family: sans-serif;
+		background-color: green;
+	}
+
+	h1 {
+		text-align: center;
+		color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 90px;
+		line-height: 90px;
+		letter-spacing: 15px;
+		text-shadow:
+		 0 1px 0 #efefef,
+		 0 2px 0 #efefef,
+		 0 3px 0 #efefef,
+		 0 4px 0 #efefef,
+		 0 30px 5px rgba(0,0,0,.1);
+		 animation: float 2s linear infinite;
+		 animation-direction: alternate;
+	}
+
+	@keyframes float {	
+		from { transform: rotate(5deg); }
+
+		to { transform: rotate(-5deg); }
+	}
+
+</style>
+
+
+<body>
+	<h1>coming <br>soon!<br></h1>
+
+	<script src="https://kit.fontawesome.com/d553bb2862.js" crossorigin="anonymous"></script>
+</body>
+</html>
